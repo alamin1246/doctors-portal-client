@@ -9,19 +9,19 @@ const Services = () => {
         {
             _id: 1,
             name: 'Fluoride Treatment',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: '',
             img: fluoride
         },
         {
             _id: 2,
             name: 'Cavity Filling',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: '',
             img: cavity
         },
         {
             _id: 3,
             name: 'Teeth Whitening',
-            description: 'Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the',
+            description: '',
             img: whitening
         },
     ];
@@ -33,7 +33,7 @@ const Services = () => {
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
-                    services.map(service => <Service
+                    services.map(service =><Service
                         key={service._id}
                         service={service}
                     ></Service>)
